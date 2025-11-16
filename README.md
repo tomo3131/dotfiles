@@ -16,13 +16,44 @@ Claude Code用のカスタムコマンドとプロジェクト管理設定
 - **セットアップスクリプト** (`setup.sh`)
   - 新しいマシンでの自動セットアップ
 
-## 🚀 新しいマシンでのセットアップ
+## ⚡ Claude Codeでのセットアップ（推奨）
+
+**最も簡単な方法**: 新しいPCでClaude Codeを開いて、以下をコピペするだけ：
+
+```
+dotfilesをセットアップして。
+リポジトリは https://github.com/tomo3131/dotfiles
+```
+
+Claude Codeが自動で：
+1. dotfilesをclone
+2. setup.shを実行
+3. シンボリックリンクを作成
+4. 動作確認
+
+すべて完了します！
+
+### プロジェクトも一緒にセットアップする場合
+
+```
+開発環境をセットアップして。
+dotfilesは https://github.com/tomo3131/dotfiles で、
+メールディレクトリサイトのプロジェクトも必要です。
+```
+
+このように依頼すれば、必要なプロジェクトも一緒にcloneしてくれます。
+
+---
+
+## 🚀 手動セットアップ（従来の方法）
+
+Claude Codeを使わずに手動でセットアップする場合：
 
 ### 1. リポジトリをclone
 
 ```bash
 cd ~
-git clone https://github.com/YOUR_USERNAME/dotfiles.git
+git clone https://github.com/tomo3131/dotfiles.git
 cd dotfiles
 ```
 
@@ -132,9 +163,11 @@ git pull origin main
 
 ## 💡 Tips
 
+- **Claude Code推奨**: 新しいマシンでは、手動コマンドではなくClaude Codeに依頼する方が圧倒的に楽です
 - **バックアップ**: 既存のファイルは自動的に `.backup` 拡張子付きでバックアップされます
 - **複数マシン**: このリポジトリを複数のマシンで共有できます
 - **カスタマイズ**: 自分用にカスタムコマンドを追加できます
+- **コマンド不要**: 「dotfilesをセットアップして」と言うだけで完了します
 
 ## 📅 最終更新
 
